@@ -8,12 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		A6610450225098180035C6FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A661044F225098180035C6FC /* AppDelegate.swift */; };
-		A6610452225098180035C6FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6610451225098180035C6FC /* ViewController.swift */; };
-		A6610455225098180035C6FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6610453225098180035C6FC /* Main.storyboard */; };
+		A6610452225098180035C6FC /* SearchEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6610451225098180035C6FC /* SearchEventViewController.swift */; };
 		A6610457225098190035C6FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6610456225098190035C6FC /* Assets.xcassets */; };
-		A661045A225098190035C6FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6610458225098190035C6FC /* LaunchScreen.storyboard */; };
-		A6610465225098190035C6FC /* MVP_ConnpassEventSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6610464225098190035C6FC /* MVP_ConnpassEventSearchTests.swift */; };
 		A6610470225098190035C6FC /* MVP_ConnpassEventSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A661046F225098190035C6FC /* MVP_ConnpassEventSearchUITests.swift */; };
+		A66481042262068B00EB1039 /* SearchEventBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66481032262068B00EB1039 /* SearchEventBuilder.swift */; };
+		A664810622620EC100EB1039 /* SearchEventModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A664810522620EC100EB1039 /* SearchEventModelTests.swift */; };
+		A664810822620FC200EB1039 /* FakeHttp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A664810722620FC200EB1039 /* FakeHttp.swift */; };
+		A664810C22622B2400EB1039 /* Http.swift in Sources */ = {isa = PBXBuildFile; fileRef = A664810B22622B2400EB1039 /* Http.swift */; };
+		A664811022624BB000EB1039 /* FakeHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A664810F22624BB000EB1039 /* FakeHttpClient.swift */; };
+		A664811322624E6D00EB1039 /* SearchEventFixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = A664811222624E6D00EB1039 /* SearchEventFixtures.swift */; };
+		A6D776A82254BBEE00467783 /* ConnpassEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D776A72254BBEE00467783 /* ConnpassEvent.swift */; };
+		A6D776AB225528FF00467783 /* PureLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D776AA225528FF00467783 /* PureLayout.framework */; };
+		A6D776AE22552B6700467783 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D776AD22552B6700467783 /* EventCell.swift */; };
+		A6D776B02255957B00467783 /* SearchEventPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D776AF2255957B00467783 /* SearchEventPresenter.swift */; };
+		A6D776B22255980A00467783 /* SearchEventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D776B12255980A00467783 /* SearchEventModel.swift */; };
+		A6D776B822559E5700467783 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D776B722559E5700467783 /* Result.swift */; };
+		A6D776BC2255ED7200467783 /* SearchEventPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D776BB2255ED7200467783 /* SearchEventPresenterTests.swift */; };
+		A6D776BF2255F02500467783 /* FakeSearchEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D776BE2255F02500467783 /* FakeSearchEventViewController.swift */; };
+		A6D776C12255F11A00467783 /* FakeSearchEventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D776C02255F11A00467783 /* FakeSearchEventModel.swift */; };
+		A6D776C32255F1B800467783 /* SearchEventViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D776C22255F1B800467783 /* SearchEventViewControllerTests.swift */; };
+		A6D776C52255F43D00467783 /* FakeSearchEventPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D776C42255F43D00467783 /* FakeSearchEventPresenter.swift */; };
+		A6D776C722561A8F00467783 /* XCTestExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D776C622561A8F00467783 /* XCTestExtensions.framework */; };
+		A6D776C822561BFE00467783 /* XCTestExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D776C622561A8F00467783 /* XCTestExtensions.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,17 +52,32 @@
 /* Begin PBXFileReference section */
 		A661044C225098180035C6FC /* MVP_ConnpassEventSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVP_ConnpassEventSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A661044F225098180035C6FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A6610451225098180035C6FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A6610454225098180035C6FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A6610451225098180035C6FC /* SearchEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEventViewController.swift; sourceTree = "<group>"; };
 		A6610456225098190035C6FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A6610459225098190035C6FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A661045B225098190035C6FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6610460225098190035C6FC /* MVP_ConnpassEventSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVP_ConnpassEventSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A6610464225098190035C6FC /* MVP_ConnpassEventSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVP_ConnpassEventSearchTests.swift; sourceTree = "<group>"; };
 		A6610466225098190035C6FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A661046B225098190035C6FC /* MVP_ConnpassEventSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVP_ConnpassEventSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A661046F225098190035C6FC /* MVP_ConnpassEventSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVP_ConnpassEventSearchUITests.swift; sourceTree = "<group>"; };
 		A6610471225098190035C6FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A66481032262068B00EB1039 /* SearchEventBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEventBuilder.swift; sourceTree = "<group>"; };
+		A664810522620EC100EB1039 /* SearchEventModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEventModelTests.swift; sourceTree = "<group>"; };
+		A664810722620FC200EB1039 /* FakeHttp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeHttp.swift; sourceTree = "<group>"; };
+		A664810B22622B2400EB1039 /* Http.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Http.swift; sourceTree = "<group>"; };
+		A664810F22624BB000EB1039 /* FakeHttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeHttpClient.swift; sourceTree = "<group>"; };
+		A664811222624E6D00EB1039 /* SearchEventFixtures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEventFixtures.swift; sourceTree = "<group>"; };
+		A6D776A72254BBEE00467783 /* ConnpassEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnpassEvent.swift; sourceTree = "<group>"; };
+		A6D776AA225528FF00467783 /* PureLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PureLayout.framework; path = Carthage/Build/iOS/PureLayout.framework; sourceTree = "<group>"; };
+		A6D776AD22552B6700467783 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		A6D776AF2255957B00467783 /* SearchEventPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEventPresenter.swift; sourceTree = "<group>"; };
+		A6D776B12255980A00467783 /* SearchEventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEventModel.swift; sourceTree = "<group>"; };
+		A6D776B722559E5700467783 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		A6D776BB2255ED7200467783 /* SearchEventPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEventPresenterTests.swift; sourceTree = "<group>"; };
+		A6D776BE2255F02500467783 /* FakeSearchEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeSearchEventViewController.swift; sourceTree = "<group>"; };
+		A6D776C02255F11A00467783 /* FakeSearchEventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeSearchEventModel.swift; sourceTree = "<group>"; };
+		A6D776C22255F1B800467783 /* SearchEventViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEventViewControllerTests.swift; sourceTree = "<group>"; };
+		A6D776C42255F43D00467783 /* FakeSearchEventPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeSearchEventPresenter.swift; sourceTree = "<group>"; };
+		A6D776C622561A8F00467783 /* XCTestExtensions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTestExtensions.framework; path = Carthage/Build/iOS/XCTestExtensions.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +85,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6D776C722561A8F00467783 /* XCTestExtensions.framework in Frameworks */,
+				A6D776AB225528FF00467783 /* PureLayout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6D776C822561BFE00467783 /* XCTestExtensions.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +115,7 @@
 				A6610463225098190035C6FC /* MVP_ConnpassEventSearchTests */,
 				A661046E225098190035C6FC /* MVP_ConnpassEventSearchUITests */,
 				A661044D225098180035C6FC /* Products */,
+				A6D776A9225528FF00467783 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +133,16 @@
 			isa = PBXGroup;
 			children = (
 				A661044F225098180035C6FC /* AppDelegate.swift */,
-				A6610451225098180035C6FC /* ViewController.swift */,
-				A6610453225098180035C6FC /* Main.storyboard */,
+				A6610451225098180035C6FC /* SearchEventViewController.swift */,
 				A6610456225098190035C6FC /* Assets.xcassets */,
-				A6610458225098190035C6FC /* LaunchScreen.storyboard */,
 				A661045B225098190035C6FC /* Info.plist */,
+				A6D776A72254BBEE00467783 /* ConnpassEvent.swift */,
+				A6D776AD22552B6700467783 /* EventCell.swift */,
+				A6D776AF2255957B00467783 /* SearchEventPresenter.swift */,
+				A6D776B12255980A00467783 /* SearchEventModel.swift */,
+				A6D776B722559E5700467783 /* Result.swift */,
+				A66481032262068B00EB1039 /* SearchEventBuilder.swift */,
+				A664810B22622B2400EB1039 /* Http.swift */,
 			);
 			path = MVP_ConnpassEventSearch;
 			sourceTree = "<group>";
@@ -110,8 +150,12 @@
 		A6610463225098190035C6FC /* MVP_ConnpassEventSearchTests */ = {
 			isa = PBXGroup;
 			children = (
-				A6610464225098190035C6FC /* MVP_ConnpassEventSearchTests.swift */,
+				A664811122624E5600EB1039 /* fixtures */,
+				A6D776BD2255F01200467783 /* fake */,
 				A6610466225098190035C6FC /* Info.plist */,
+				A6D776BB2255ED7200467783 /* SearchEventPresenterTests.swift */,
+				A6D776C22255F1B800467783 /* SearchEventViewControllerTests.swift */,
+				A664810522620EC100EB1039 /* SearchEventModelTests.swift */,
 			);
 			path = MVP_ConnpassEventSearchTests;
 			sourceTree = "<group>";
@@ -125,6 +169,35 @@
 			path = MVP_ConnpassEventSearchUITests;
 			sourceTree = "<group>";
 		};
+		A664811122624E5600EB1039 /* fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				A664811222624E6D00EB1039 /* SearchEventFixtures.swift */,
+			);
+			path = fixtures;
+			sourceTree = "<group>";
+		};
+		A6D776A9225528FF00467783 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6D776C622561A8F00467783 /* XCTestExtensions.framework */,
+				A6D776AA225528FF00467783 /* PureLayout.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A6D776BD2255F01200467783 /* fake */ = {
+			isa = PBXGroup;
+			children = (
+				A6D776BE2255F02500467783 /* FakeSearchEventViewController.swift */,
+				A6D776C02255F11A00467783 /* FakeSearchEventModel.swift */,
+				A6D776C42255F43D00467783 /* FakeSearchEventPresenter.swift */,
+				A664810722620FC200EB1039 /* FakeHttp.swift */,
+				A664810F22624BB000EB1039 /* FakeHttpClient.swift */,
+			);
+			path = fake;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +208,7 @@
 				A6610448225098180035C6FC /* Sources */,
 				A6610449225098180035C6FC /* Frameworks */,
 				A661044A225098180035C6FC /* Resources */,
+				A6D776AC2255293600467783 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -152,6 +226,7 @@
 				A661045C225098190035C6FC /* Sources */,
 				A661045D225098190035C6FC /* Frameworks */,
 				A661045E225098190035C6FC /* Resources */,
+				A6D776C922561C0400467783 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -229,9 +304,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A661045A225098190035C6FC /* LaunchScreen.storyboard in Resources */,
 				A6610457225098190035C6FC /* Assets.xcassets in Resources */,
-				A6610455225098180035C6FC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,13 +324,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A6D776AC2255293600467783 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/PureLayout.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/XCTestExtensions.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/PureLayout.framework",
+				"(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/XCTestExtensions.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		A6D776C922561C0400467783 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/XCTestExtensions.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/XCTestExtensions.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A6610448225098180035C6FC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6610452225098180035C6FC /* ViewController.swift in Sources */,
+				A6D776AE22552B6700467783 /* EventCell.swift in Sources */,
+				A6610452225098180035C6FC /* SearchEventViewController.swift in Sources */,
+				A6D776A82254BBEE00467783 /* ConnpassEvent.swift in Sources */,
+				A664810C22622B2400EB1039 /* Http.swift in Sources */,
+				A66481042262068B00EB1039 /* SearchEventBuilder.swift in Sources */,
 				A6610450225098180035C6FC /* AppDelegate.swift in Sources */,
+				A6D776B22255980A00467783 /* SearchEventModel.swift in Sources */,
+				A6D776B822559E5700467783 /* Result.swift in Sources */,
+				A6D776B02255957B00467783 /* SearchEventPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +388,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6610465225098190035C6FC /* MVP_ConnpassEventSearchTests.swift in Sources */,
+				A664810622620EC100EB1039 /* SearchEventModelTests.swift in Sources */,
+				A664811322624E6D00EB1039 /* SearchEventFixtures.swift in Sources */,
+				A6D776C32255F1B800467783 /* SearchEventViewControllerTests.swift in Sources */,
+				A664810822620FC200EB1039 /* FakeHttp.swift in Sources */,
+				A664811022624BB000EB1039 /* FakeHttpClient.swift in Sources */,
+				A6D776C12255F11A00467783 /* FakeSearchEventModel.swift in Sources */,
+				A6D776BF2255F02500467783 /* FakeSearchEventViewController.swift in Sources */,
+				A6D776C52255F43D00467783 /* FakeSearchEventPresenter.swift in Sources */,
+				A6D776BC2255ED7200467783 /* SearchEventPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,25 +422,6 @@
 			targetProxy = A661046C225098190035C6FC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		A6610453225098180035C6FC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A6610454225098180035C6FC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A6610458225098190035C6FC /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A6610459225098190035C6FC /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		A6610472225098190035C6FC /* Debug */ = {
@@ -434,6 +546,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LKY5E3QCX4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MVP_ConnpassEventSearch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,6 +568,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LKY5E3QCX4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MVP_ConnpassEventSearch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -471,6 +591,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LKY5E3QCX4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MVP_ConnpassEventSearchTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -492,6 +616,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LKY5E3QCX4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MVP_ConnpassEventSearchTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
